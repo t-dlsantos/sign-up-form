@@ -111,7 +111,9 @@ label {
     margin-top: 24px;
 }
 
-label ~ input {
+label ~ input,
+input:valid {
+    outline: none;
     font-weight: 100;
     appearance: none;
     -webkit-appearance: none;
@@ -146,4 +148,24 @@ button {
 
 .already-account a {
     color: var(--link-color);
+}
+
+.error {
+    border-color: #D85050;
+    font-size: 12px;
+    color: #D85050;
+}
+
+input:valid {
+    color: var(--background-color);
+}
+
+input:focus:invalid {
+    border-color: #D85050;
+}
+
+input:focus:valid {
+    border: 2px solid #6F86BB;
+    box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.25);
+    color: var(--background-color);
 }
