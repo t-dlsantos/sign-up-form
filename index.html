@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Sign Up</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
                     <div class="inputs-container">
                         <div>
                             <label for="first_name">FIRST NAME <span aria-label="required">*</span></label>
-                            <input type="text" name="first_name" id="fist_name" required>
+                            <input type="text" name="first_name" id="first_name" required>
                         </div>
 
                         <div>
@@ -53,8 +54,8 @@
 
                         <div>
                             <label for="confirm_password">CONFIRM PASSWORD <span aria-label="required">*</span></label>
-                            <input type="password" class="error" name="confirm_password" id="confirm_password" required>
-                            <p class="error">* Passwords do not match</p>
+                            <input type="password" class="error" name="confirm-password" id="confirm_password" required>
+                            <p class="error-paragraph">* Passwords do not match</p>
                         </div>
                         </div>
 
@@ -66,7 +67,6 @@
 
                 </form>
             </div>
-        
     </section>
     </main>
 </body>

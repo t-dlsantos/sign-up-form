@@ -156,6 +156,11 @@ button {
     color: #D85050;
 }
 
+.error-paragraph {
+    font-size: 12px;
+    color: #D85050;
+}
+
 input:valid {
     color: var(--background-color);
 }
