@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,600;1,700&display=swap');
 
 :root {
-    --primary-color: #fff;
-    --background-color: #101727;
-    --accent-color: #2ecc71;
-    --text-color: #474E58;
-    --link-color: #101727;
-
-    --border-color: #E5E7EB;
+    --primary-color: #101727;
+    --accent-color: #6F86BB;
+    --text-color: #5F626B;
+    --danger-color: #D85050;
+    --gray-color: #E5E7EB;
+    --white-color: #FFFFFF;
 
     --form-width: 562px;
     --form-padding: 64px;
@@ -59,8 +58,8 @@ main {
 }
 
 section {
-    width: 100%;
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     padding: var(--form-padding);
@@ -86,6 +85,7 @@ section {
 }
 
 .title {
+    color: var(--primary-color);
     font-size: 28px;
     font-weight: 600;
 }
@@ -114,11 +114,11 @@ label {
 label ~ input,
 input:valid {
     outline: none;
-    font-weight: 100;
+    font-weight: 500;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--gray-color);
     border-radius: 4px;
     height: 32px;
     padding: 0 10px;
@@ -129,8 +129,8 @@ button {
     width: 100%;
     padding: var(--button-padding);
     border: none;
-    background-color: var(--background-color);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
     font-size: 14px;
     border-radius: var(--button-border-radius);
     cursor: pointer;
@@ -147,7 +147,7 @@ button {
 }
 
 .already-account a {
-    color: var(--link-color);
+    color: var(--primary-color);
 }
 
 .error {
@@ -170,7 +170,7 @@ input:focus:invalid {
 }
 
 input:focus:valid {
-    border: 2px solid #6F86BB;
+    border: 2px solid var(--accent-color);
     box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.25);
     color: var(--background-color);
 }
