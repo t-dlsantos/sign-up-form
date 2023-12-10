@@ -30,7 +30,7 @@ main {
 }
 
 .img-container {
-    background-image: url(images/nick-andreka-eYG53JFRy9M-unsplash.jpg);
+    background-image: url(../images/nick-andreka-eYG53JFRy9M-unsplash.jpg);
     background-size: cover;
     background-position: center;
     width: 60vw;
